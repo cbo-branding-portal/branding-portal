@@ -14,17 +14,17 @@
 }
 
 .connects-count-header {
-    height: 150px;
+    height: 60vh;
 }
 
 .connects-count-header-left {
     text-align: center;
-    background-color: #808080;
+    background-color: #ffffff;
 }
 
 .connects-count-header-right {
     text-align: center;
-    background-color: #d4d4db;
+    background-color: #ffffff;
 }
 
 .mat-toolbar.mat-primary {
@@ -40,25 +40,65 @@
 }
 
 .my-connects {
-    margin-top: 20px; 
-    border: 1px solid black;
-    border-radius: 5px;
+    margin-top: 20px;
     width: auto;
-    padding: 10px;
-    background-color: #ded4d4;
+    padding-top: 10px;
+    padding-left: 10px;
     font-size: 20px;
     font-weight: 550;
 }
 
-.my-connects-green {
-    margin-top: 20px; 
-    border: 1px solid black;
-    border-radius: 5px;
-    width: 100px;
-    color: #2f6516;
-    background-color: #afd29f;
-    font-weight: 600;
-    cursor: pointer;
+.black-band {
+    width: 98%;
+    margin-left: 20px;
+    height: 8vh;
+    background-color: rgb(35, 34, 34);
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: 500;
+    text-align: left;
+    margin-top: 20px;
+}
+
+.title-text {
+    text-align: left;
+    margin-left: 22px;
+    font-size: 15px;
+    margin-top: 10px;
+}
+.completed-connects {
+    width: 80%;
+    height: 13vh;
+    background-color: #ffffff;
+    margin-right: 10px;
+    margin-left: 20px;
+    margin-top: 10px;
+    border: 1px solid white;
+    box-shadow: 5px 10px #fefefe;
+}
+
+.mat-icon {
+    font-size: 40px;
+}
+
+.number-of-connects {
+    font-weight:700;
+    font-size: 24px;
+    margin-left: 40px;
+    margin-top: 10px;
+    vertical-align: middle;
+}
+
+.text-connects {
+    font-weight:700;
+    font-size: 16px;
+    text-align: end;
+    padding-left: 30px;
+}
+.view-details {
+    text-align: end;
+    font-style: italic;
+    margin-right: 5px;
 }
 
 .my-connects-orange {
