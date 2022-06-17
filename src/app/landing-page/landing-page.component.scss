@@ -32,11 +32,34 @@
 }
 
 .fields-spacing {
-    margin-top: 10px;
+    margin-top: 80px;
 }
 
 .buttons-spacing {
     margin-bottom: 15px;
+}
+
+.chart {
+    //margin: 5px 20px 15px auto; 
+    display: block;
+    width: 120px;
+    //border: 1px solid black;
+}
+
+.number {
+    margin-left: 70px;
+    margin-top: 50px;
+    font-size: 500%;
+    font-weight: 600;
+    color: rgb(0, 255, 238);
+}
+
+.month-year {
+    margin-top: 40px;
+    margin-left: 60px;
+    font-size: 100%;
+    font-weight: 500;
+    color: rgb(0, 255, 238);
 }
 
 .my-connects {
@@ -139,22 +162,6 @@
     display: block;
     width: 120px;
     //border: 1px solid black;
-}
-
-.number {
-    margin-left: 70px;
-    margin-top: 50px;
-    font-size: 500%;
-    font-weight: 600;
-    color: rgb(0, 255, 238);
-}
-
-.month-year {
-    margin-top: 40px;
-    margin-left: 60px;
-    font-size: 100%;
-    font-weight: 500;
-    color: white;
 }
 
 .main-text {

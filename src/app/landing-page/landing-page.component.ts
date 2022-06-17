@@ -23,6 +23,20 @@ export class LandingPageComponent implements OnInit {
 
   threemonths = new FormControl('');
   sixmonths = new FormControl('');
+  public dashboardEnabled: boolean = true;
+  public offeringPortfolioEnabled: boolean = false;
+
+  showDashboard() {
+    console.log('dashboard option clicked');
+    this.dashboardEnabled = true;
+    this.offeringPortfolioEnabled = false;
+  }
+
+  showOfferingPortfolio() {
+    console.log('offering portfolio clicked');
+    this.offeringPortfolioEnabled = true;
+    this.dashboardEnabled = false;
+  }
 
   onClick() {
     console.log('Clicked button');
