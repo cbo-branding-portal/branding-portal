@@ -32,14 +32,26 @@
         </canvas>
       </mat-card>
       <div class="list">
-        <mat-card class="mat-elevation-z0">
-          <mat-card-title class="card-title">Top Brand Ambassadors</mat-card-title>
-        <ol role="list">
+        <h1><b>Top Brand Ambassadors</b></h1>
+        <div fxLayout="row" fxLayoutAlign="space-around center">
+        <!-- <div style="display: flex; justify-content:center;">
+        <img src="../../assets/images/award.png" class="trophy-image">
+      </div> -->
+      <div>
+        <img src="../../assets/images/people.jpg" class="trophy-image">
+      </div>
+      <div fxLayout="column wrap" fxLayoutAlign="center center">
+        <div class="container" *ngFor="let array of repetitionArray; let i=index">
+          <img src="../../assets/images/ribbon.png" class="ribbon-image">
+          <div class="centered">{{i+1}}. {{array}}</div>
+        <!-- <ol role="list">
             <li role="listitem">John Smith</li>
             <li role="listitem">Jane Doe</li>
             <li role="listitem">John Doe</li>
-        </ol>
-        </mat-card>
+        </ol> -->
+      </div>
+    </div>
+    </div>
       </div>
     </div>
   </div>

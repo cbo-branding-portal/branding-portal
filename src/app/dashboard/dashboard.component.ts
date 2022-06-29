@@ -28,6 +28,7 @@ export class DashboardComponent implements OnInit {
             return ctx.chart.data.labels[ctx.dataIndex];
           }
         },
+        color: 'white'
       },
     }
   };
@@ -35,8 +36,8 @@ export class DashboardComponent implements OnInit {
     labels: [ [ 'Completed' ], [ 'Delayed' ], 'Missed' ],
     datasets: [ {
       data: [ 600, 200, 200 ],
-      backgroundColor: 	['#AFEE66', '#33FFE3', '#FCFF33'],
-      hoverBackgroundColor: ['#AFEE66', '#33FFE3', '#FCFF33'] 
+      backgroundColor: 	['#2E7EA5', '#379E34', '#C5B70E'],
+      hoverBackgroundColor: ['#2E7EA5', '#379E34', '#C5B70E']
     } ]
   };
   public connectsPieChartType: ChartType = 'pie';
@@ -115,7 +116,8 @@ export class DashboardComponent implements OnInit {
       },
       datalabels: {
         anchor: 'center',
-        align: 'center'
+        align: 'center',
+        color: 'white'
       }
     }
   };
@@ -130,7 +132,7 @@ export class DashboardComponent implements OnInit {
   public barChartData: ChartData<'bar'> = {
     labels: [ 'VMWare', 'DevOps', 'Cloud', 'Testing', 'Database', 'Citrix' ],
     datasets: [
-      { data: [ 10, 17, 12, 10, 4, 6, 3 ], label: 'Connects', backgroundColor: '#AFEE66', hoverBackgroundColor: ['#AFEE66']  }
+      { data: [ 10, 17, 12, 10, 4, 6, 3 ], label: 'Connects', backgroundColor: '#379E34', hoverBackgroundColor: ['#379E34']  }
     ]
   };
 
@@ -157,15 +159,16 @@ export class DashboardComponent implements OnInit {
             return ctx.chart.data.labels[ctx.dataIndex];
           }
         },
+        color: 'white'
       },
     }
   };
   public statusPieChartData: ChartData<'pie', number[], string | string[]> = {
     labels: [ 'Joined', 'Dropped off' ],
     datasets: [ {
-      data: [ 30, 5 ],
-      backgroundColor: 	['#AFEE66', '#33FFE3', '#FCFF33'],
-      hoverBackgroundColor: ['#AFEE66', '#33FFE3', '#FCFF33'] 
+      data: [ 30, 15 ],
+      backgroundColor: 	['#2E7EA5', '#379E34', '#C5B70E'],
+      hoverBackgroundColor: ['#2E7EA5', '#379E34', '#C5B70E'] 
     } ]
   };
   public statusPieChartType: ChartType = 'pie';

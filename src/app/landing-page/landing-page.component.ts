@@ -25,17 +25,20 @@ export class LandingPageComponent implements OnInit {
   sixmonths = new FormControl('');
   public dashboardEnabled: boolean = true;
   public offeringPortfolioEnabled: boolean = false;
+  public isSelected: number = 1;
 
   showDashboard() {
     console.log('dashboard option clicked');
     this.dashboardEnabled = true;
     this.offeringPortfolioEnabled = false;
+    this.isSelected = 1;
   }
 
   showOfferingPortfolio() {
     console.log('offering portfolio clicked');
     this.offeringPortfolioEnabled = true;
     this.dashboardEnabled = false;
+    this.isSelected = 2;
   }
 
   onClick() {
@@ -60,8 +63,8 @@ export class LandingPageComponent implements OnInit {
     labels: this.doughnutChartLabels,
     datasets: [
       { data: [ 91, 9 ],
-        backgroundColor: 	['#AFEE66', '#33FFE3', '#FCFF33'],
-        hoverBackgroundColor: ['#AFEE66', '#33FFE3', '#FCFF33']
+        backgroundColor: 	['#2E7EA5', '#379E34', '#C5B70E'],
+        hoverBackgroundColor: ['#2E7EA5', '#379E34', '#C5B70E']
       }
     ]
   };

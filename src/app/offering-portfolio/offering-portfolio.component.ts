@@ -20,6 +20,8 @@ export class OfferingPortfolioComponent implements OnInit {
   talentGroup = new FormControl('');
   groups = ['TG 1', 'TG 2', 'TG 3'];
 
+  public repetitionArray = ['John Smith','Jane Doe','Jane Smith'];
+
   //Connects Pie Chart
   public connectsPieChartOptions: ChartConfiguration['options'] = {
     responsive: false,
@@ -34,6 +36,7 @@ export class OfferingPortfolioComponent implements OnInit {
             return ctx.chart.data.labels[ctx.dataIndex];
           }
         },
+        color: 'white'
       },
     }
   };
@@ -41,8 +44,8 @@ export class OfferingPortfolioComponent implements OnInit {
     labels: [ [ 'Completed' ], [ 'Delayed' ], 'Missed' ],
     datasets: [ {
       data: [ 800, 120, 180 ],
-      backgroundColor: 	['#AFEE66', '#33FFE3', '#FCFF33'],
-      hoverBackgroundColor: ['#AFEE66', '#33FFE3', '#FCFF33'] 
+      backgroundColor: 	['#2E7EA5', '#379E34', '#C5B70E'],
+      hoverBackgroundColor: ['#2E7EA5', '#379E34', '#C5B70E'] 
     } ]
   };
   public connectsPieChartType: ChartType = 'pie';
@@ -121,7 +124,8 @@ export class OfferingPortfolioComponent implements OnInit {
       },
       datalabels: {
         anchor: 'center',
-        align: 'center'
+        align: 'center',
+        color: 'white'
       }
     }
   };
@@ -133,7 +137,7 @@ export class OfferingPortfolioComponent implements OnInit {
   public barChartData: ChartData<'bar'> = {
     labels: [ 'VMWare', 'DevOps', 'Cloud', 'Testing', 'Database', 'Citrix' ],
     datasets: [
-      { data: [ 100, 70, 112, 90, 40, 78, 34 ], label: 'Connects', backgroundColor: 	'#AFEE66', hoverBackgroundColor: '#AFEE66' }
+      { data: [ 100, 70, 112, 90, 40, 78, 34 ], label: 'Connects', backgroundColor: 	'#379E34', hoverBackgroundColor: '#379E34' }
     ]
   };
 

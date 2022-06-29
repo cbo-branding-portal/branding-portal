@@ -9,9 +9,9 @@
 .list {
     margin: 10px 5px 10px 10px; 
     display: block;
-    border: 7px double black;
     width: auto;
     height: auto;
+    text-align: center;
 }
 
 .mat-card {
@@ -35,4 +35,27 @@
 ::ng-deep .mat-tab-body-content {
     height: 100%;
     overflow: hidden !important;
+}
+
+.trophy-image {
+    height: 160px;
+    width: 150px;
+}
+
+.ribbon-image {
+    height: 50px;
+    width: 200px;
+}
+
+.container {
+    position: relative;
+    text-align: center;
+    color: black;
+}
+
+.centered {
+    position: absolute;
+    top: 40%;
+    left: 47%;
+    transform: translate(-50%, -50%);
 }

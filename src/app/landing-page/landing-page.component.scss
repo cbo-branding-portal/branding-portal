@@ -51,7 +51,7 @@
     margin-top: 50px;
     font-size: 500%;
     font-weight: 600;
-    color: rgb(0, 255, 238);
+    color: rgb(46, 126, 165);
 }
 
 .month-year {
@@ -59,22 +59,24 @@
     margin-left: 60px;
     font-size: 100%;
     font-weight: 500;
-    color: rgb(0, 255, 238);
+    color: rgb(46, 126, 165);
 }
 
 .my-connects {
     margin-top: 20px;
+    margin-left: 20px;
     width: auto;
     padding-top: 10px;
     padding-left: 10px;
     font-size: 20px;
     font-weight: 550;
+    text-align: start;
 }
 
 .black-band {
     width: 98%;
     margin-left: 20px;
-    height: 8vh;
+    min-height: 8vh;
     background-color: rgb(35, 34, 34);
     color: #ffffff;
     font-size: 20px;
@@ -107,9 +109,14 @@
 .number-of-connects {
     font-weight:700;
     font-size: 24px;
-    margin-left: 40px;
-    margin-top: 10px;
+    margin-left: 35%;
+    margin-right: auto;
+    margin-top: 4%;
     vertical-align: middle;
+}
+
+.selectedTab {
+    border: 1px solid #2E7EA5;
 }
 
 .text-connects {
@@ -121,7 +128,10 @@
 .view-details {
     text-align: end;
     font-style: italic;
-    margin-right: 5px;
+    margin-top: 10px;
+    margin-right: 4px;
+    color: blue;
+    cursor: pointer;
 }
 
 .my-connects-orange {
@@ -194,4 +204,12 @@
     background-color: #dbdada;
     height: 100px;
     margin-top: 20px;
+}
+
+.tab-options {
+    margin-top: 20px;
+}
+
+.mat-raised-button.mat-primary {
+    background-color: rgb(46, 126, 165);
 }
