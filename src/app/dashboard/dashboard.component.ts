@@ -33,9 +33,9 @@ export class DashboardComponent implements OnInit {
     }
   };
   public connectsPieChartData: ChartData<'pie', number[], string | string[]> = {
-    labels: [ [ 'Completed' ], [ 'Delayed' ], 'Missed' ],
+    labels: [ [ 'Completed' ], 'Missed', [ 'To be', 'completed' ] ],
     datasets: [ {
-      data: [ 600, 200, 200 ],
+      data: [ 500, 150, 350 ],
       backgroundColor: 	['#2E7EA5', '#379E34', '#C5B70E'],
       hoverBackgroundColor: ['#2E7EA5', '#379E34', '#C5B70E']
     } ]

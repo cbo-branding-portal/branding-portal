@@ -62,7 +62,7 @@ export class LandingPageComponent implements OnInit {
   public doughnutChartData: ChartData<'doughnut'> = {
     labels: this.doughnutChartLabels,
     datasets: [
-      { data: [ 91, 9 ],
+      { data: [ 230, 21 ],
         backgroundColor: 	['#2E7EA5', '#379E34', '#C5B70E'],
         hoverBackgroundColor: ['#2E7EA5', '#379E34', '#C5B70E']
       }

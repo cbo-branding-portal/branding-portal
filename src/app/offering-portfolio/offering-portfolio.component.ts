@@ -41,9 +41,9 @@ export class OfferingPortfolioComponent implements OnInit {
     }
   };
   public connectsPieChartData: ChartData<'pie', number[], string | string[]> = {
-    labels: [ [ 'Completed' ], [ 'Delayed' ], 'Missed' ],
+    labels: [ [ 'Completed' ], 'Missed', [ 'To be', 'completed' ] ],
     datasets: [ {
-      data: [ 800, 120, 180 ],
+      data: [ 620, 120, 370 ],
       backgroundColor: 	['#2E7EA5', '#379E34', '#C5B70E'],
       hoverBackgroundColor: ['#2E7EA5', '#379E34', '#C5B70E'] 
     } ]
